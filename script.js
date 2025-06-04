@@ -29,3 +29,13 @@ localStorage.setItem("transactions", JSON.stringify(transactions));
 
   transactionFormEl.reset();
 }
+function updateTransactionList() {
+  transactionListEl.innerHTML = "";
+
+  const sortedTransactions = [...transactions].reverse();
+
+  sortedTransactions.forEach((transaction) => {
+    const transactionEl = createTransactionElement(transaction);
+    transactionListEl.appendChild(transactionEl);
+  });
+}
