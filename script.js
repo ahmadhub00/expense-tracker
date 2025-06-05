@@ -72,3 +72,23 @@ function updateSummary() {
   incomeAmountEl.textContent = formatCurrency(income);
   expenseAmountEl.textContent = formatCurrency(expenses);
 }
+function formatCurrency(number) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(number);
+}
+
+function removeTransaction(id) {
+  // filter out the one we wanted to delete
+  transactions = transactions.filter((transaction) => transaction.id !== id);
+
+  localStorage.setItem("transcations", JSON.stringify(transactions));
+
+  updateTransactionList();
+  updateSummary();
+}
+
+// initial render
+updateTransactionList();
+updateSummary();
