@@ -118,7 +118,7 @@ xpenses p {
   color: #059669;
 }
 
-.e max-height: 500px;
+.e {max-height: 500px;
   overflow-y: auto;
   padding-right: 8px;
   flex-grow: 1;
@@ -140,4 +140,17 @@ xpenses p {
 }
 #transaction-list::-webkit-scrollbar-thumb:hover {
   background-color: #a0aec0;
+}
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border-right: 5px solid;
+  animation: slideIn 0.3s ease;
 }
