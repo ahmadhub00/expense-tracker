@@ -88,7 +88,7 @@ h2 {
   font-weight: 500;
 }
 
-xpenses p {
+.expenses p {
   color: #dc2626;
 }
 
@@ -154,6 +154,7 @@ xpenses p {
   border-right: 5px solid;
   animation: slideIn 0.3s ease;
 }
+
 @keyframes slideIn {
   from {
     opacity: 0;
