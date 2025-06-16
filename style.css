@@ -246,3 +246,15 @@ input:focus {
   border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
+
+
+input:hover {
+  border-color: #cbd5e0;
+}
+
+small {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: block;
+}
