@@ -293,3 +293,12 @@ button[type="submit"]:active {
     max-height: 300px;
   }
 }
+@media (max-width: 480px) {
+  .container {
+    padding: 24px;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
