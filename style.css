@@ -302,3 +302,24 @@ button[type="submit"]:active {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  
+
+
+
+  .balance-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .income p,
+  .expenses p {
+    font-size: 1.5rem;
+  }
+
+  .transaction {
+    padding: 14px 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
